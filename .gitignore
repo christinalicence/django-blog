@@ -1,5 +1,62 @@
 # Python virtual environment
 .venv/
+env/
+venv/
+
+# Python bytecode
 __pycache__/
+*.py[cod]
+*$py.class
+
+# macOS system files
+.DS_Store
+
+# macOS Finder info
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# macOS Spotlight files
+.Spotlight-V100
+.Trashes
+
+# macOS metadata
+*.swp
+*.swo
+*.swn
+
+# VS Code settings
+.vscode/
+
+# Django stuff
+*.log
+*.pot
 *.pyc
-env.py
+*.sqlite3
+db.sqlite3
+
+# Django migrations
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# dotenv / environment files (if you use .env)
+.env
+.env.local
+.env.*.local
+
+# Pytest / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Pip / package files
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignore egg files and build artifacts
+*.egg-info/
+dist/
+build/
+eggs/
