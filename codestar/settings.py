@@ -31,6 +31,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     '.herokuapp.com',  # allows any Heroku app URL
+    'practice-my-blog-fd3393450c3b.herokuapp.com', # specific Heroku app
     '127.0.0.1',       # local IP
 ]
 
@@ -92,7 +93,8 @@ DATABASES = {
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeinstitute-ide.net/",
-    "https://*.herokuapp.com"
+    "https://practice-my-blog-fd3393450c3b.herokuapp.com",
+    "https://*.herokuapp.com",
 ]
 
 
