@@ -49,7 +49,16 @@ INSTALLED_APPS = [
     'blog',
 ]
 
+class LogHostMiddleware:
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        print("Host header:", request.get_host())
+        return self.get_response(request)
+    
 MIDDLEWARE = [
+    'codestar.settings.LogHostMiddleware',  # <-- log host first
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
