@@ -30,7 +30,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    *
+    "practice-my-blog-fd3393450c3b.herokuapp.com",
+    ".herokuapp.com",
+    "127.0.0.1",
 ]
 
 # Application definition
@@ -90,9 +92,12 @@ DATABASES = {
 }
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://*.codeinstitute-ide.net",
+    "https://practice-my-blog-fd3393450c3b.herokuapp.com",
     "https://*.herokuapp.com",
 ]
+
+# Ensure Django knows it's behind a proxy (Heroku uses a proxy)
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 # Password validation
