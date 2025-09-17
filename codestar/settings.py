@@ -31,6 +31,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'practice-my-blog.herokuapp.com',
+    'practice-my-blog-fd3393450c3b.herokuapp.com',
     '127.0.0.1',
     'localhost',
 ]
