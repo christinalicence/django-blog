@@ -30,7 +30,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '.herokuapp.com',
+    *
 ]
 
 # Application definition
