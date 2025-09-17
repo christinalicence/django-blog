@@ -29,7 +29,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['practice-my-blog-fd3393450c3b.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = [
+    'practice-my-blog.herokuapp.com',
+    '127.0.0.1',
+    'localhost',
+]
 
 
 # Application definition
