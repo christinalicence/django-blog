@@ -30,12 +30,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'practice-my-blog.herokuapp.com',
-    'practice-my-blog-fd3393450c3b.herokuapp.com',
-    '127.0.0.1',
-    'localhost',
+    '.herokuapp.com',  # allows any Heroku app URL
+    '127.0.0.1',       # local IP
 ]
-
 
 # Application definition
 
@@ -49,16 +46,7 @@ INSTALLED_APPS = [
     'blog',
 ]
 
-class LogHostMiddleware:
-    def __init__(self, get_response):
-        self.get_response = get_response
-
-    def __call__(self, request):
-        print("Host header:", request.get_host())
-        return self.get_response(request)
-    
 MIDDLEWARE = [
-    'codestar.settings.LogHostMiddleware',  # <-- log host first
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
