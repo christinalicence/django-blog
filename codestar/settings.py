@@ -27,12 +27,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     "practice-my-blog-fd3393450c3b.herokuapp.com",
     ".herokuapp.com",
     "127.0.0.1",
+    "localhost",
 ]
 
 # Application definition
@@ -94,6 +95,7 @@ DATABASES = {
 CSRF_TRUSTED_ORIGINS = [
     "https://practice-my-blog-fd3393450c3b.herokuapp.com",
     "https://*.herokuapp.com",
+    "https://*.codeinstitute-ide.net/",
 ]
 
 # Ensure Django knows it's behind a proxy (Heroku uses a proxy)
