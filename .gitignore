@@ -24,6 +24,7 @@ staticfiles/
 venv/
 ENV/
 env/
+env.py
 
 # VS Code
 .vscode/
