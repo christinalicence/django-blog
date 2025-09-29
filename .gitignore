@@ -26,6 +26,9 @@ ENV/
 env/
 env.py
 
+# DB
+blog/fixtures/
+
 # VS Code
 .vscode/
 
